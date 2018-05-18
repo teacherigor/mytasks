@@ -1,6 +1,8 @@
 var x = 5;
 var y = 20;
 var text = ", ";
+var result = "";
+
 
 // if (x <= y) {
 // 	console.log(x++ + text);
@@ -10,6 +12,7 @@ var text = ", ";
 
 
 while (x <= y) {
-	console.log(x++ + ", ");
+	result = result + x++ + text;
+	console.log(result);
 }
 
