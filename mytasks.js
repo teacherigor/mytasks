@@ -13,6 +13,8 @@ var result = "";
 
 while (x <= y) {
 	result = result + x++ + text;
-	console.log(result);
+	
 }
+
+console.log(result);
 
