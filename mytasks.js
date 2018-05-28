@@ -1,12 +1,23 @@
 var x = 10;
 var y = 0;
+var divisionColumn = "";
+var divisionRow = "";
+var separate = ", ";
 
 for (x; x > y; x--) {
-division = x / 10;
-console.log(division);
+divisionColumn = x / 10;
+console.log(divisionColumn);
 }
 
+for (x; x > y; x--) {
+	divisionRow = divisionRow + x / 10 + separate;
+}
+
+console.log(divisionRow);
 
 
 
-// HW for x = 10; y = 0: printout = every number divided by 10; спочатку встовпчик, а потім врядочок
+
+
+
+// HW for x = 10; y = 0: printout = every number divided by 10; initially in a column, then in a row
