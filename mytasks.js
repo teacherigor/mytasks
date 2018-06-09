@@ -7,7 +7,9 @@ var separate = ", ";
 for (x; x > y; x--) {
 divisionColumn = x / 10;
 console.log(divisionColumn);
-divisionRow = divisionRow + divisionColumn + separate;
+divisionRow = divisionRow + divisionColumn;
+if (x > 1) divisionRow = divisionRow + separate;
+
 }
 
 console.log(divisionRow);
