@@ -1,20 +1,8 @@
-function numberToPower(number, power){
-	var i = 1;
-	var result = 1;
-	
-	
-	while (i < power) {
-		result = result * number;
-		i++;
-		console.log('while loop',result, i)
-	}
-	
-	
-	return result; 
+var age = 5;
+
+while (age < 10) {
+	console.log("<br>You are under 10.");
+	age++;
 }
 
-var fiveToThirdPower = numberToPower(5, 7);
-
-console.log('result',fiveToThirdPower);
-
-/* HW: реалізувати функцію, яка зводить число в степінь */
+document.write("You are now over 10.");
