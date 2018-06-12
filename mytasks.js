@@ -1,10 +1,19 @@
 function numberToPower(number, power){
+	var i = 1;
+	var result;
 	
-	return number * number * number; 
+	
+	while (i < power) {
+		result = result * number;
+		i++;
+	}
+	
+	
+	return result; 
 }
 
-var fiveToThirdPower = numberToPower(5);
+var fiveToThirdPower = numberToPower(5, 7);
 
 console.log(fiveToThirdPower);
 
-HW: реалізувати функцію, яка зводить число в степінь
+/* HW: реалізувати функцію, яка зводить число в степінь */
