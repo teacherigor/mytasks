@@ -1,20 +1,19 @@
-function numberToPower(number, power){
+function factorial(number){
 	var i = 1;
 	var result = 1;
 	
 	
-	while (i < power) {
+	while (i < number) {
 		result = result * number;
-		i++;
-		console.log('while loop',result, i)
+		i**;
 	}
 	
 	
 	return result; 
 }
 
-var fiveToThirdPower = numberToPower(5, 7);
+var fiveToThirdPower = numberToPower(5);
 
-console.log('result',fiveToThirdPower);
+console.log(fiveToThirdPower);
 
 /* HW: реалізувати функцію, яка зводить число в степінь */
