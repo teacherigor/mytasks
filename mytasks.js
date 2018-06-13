@@ -1,8 +1,15 @@
-var age = 5;
+function numberToPower (number, power) {
 
-while (age < 10) {
-	console.log("<br>You are under 10.");
-	age++;
+	var i = 1;
+	var result = 1;
+
+	while (i < power) {
+		result = result * number;
+		i++;
+	}
+
+	return result;
 }
 
-document.write("You are now over 10.");
+var x = numberToPower(6, 6);
+console.log(x);
