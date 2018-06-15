@@ -1,12 +1,11 @@
-function numberToPower (number, power) {
+function numberFactorial (number) {
 
-	var i = 1;
-	var result = 1;
-
-	while (i < power) {
-		result = result * number;
-		i++;
+	if (number > 0 && number <= 1) {
+		return 1;
+	} else {
+		return number * numberFactorial(number - 1);
+	}
 	}
 
-var x = numberToPower(6, 6);
+var x = numberFactorial(10);
 console.log(x);
