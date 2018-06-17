@@ -1,9 +1,9 @@
 function numberFactorial (number) {
 	var result = 1;
 		
-	for(number; number >= 1; number--) {
+	while(number >= 1) {
 		
-		result = result * number;
+		result = result * number--;
 
 	/* result = result * 10;
 	result = result * 9;
