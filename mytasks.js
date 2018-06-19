@@ -1,20 +1,18 @@
 function numberFactorial (number) {
 	var result = 1;
-		
+	var halfNumber = number/2;
+	
 	while(number >= 1) {
 		
 		result = result * number--;
 
-	/* result = result * 10;
-	result = result * 9;
-	result = result * 8;		 */
+	if(number <= halfNumber) return result;
 		
-		// number--
 	}
 	return result;
 }
 
-var x = numberFactorial(10);
+var x = numberFactorial(4);
 console.log(x);
 
-// HW numberFactorial with while; multiply only down to the half of the number
+// HW numberFactorial with while; multiply only down to the half of the number if number is more than 10;
