@@ -1,18 +1,21 @@
 function numberFactorial (number) {
 	var result = 1;
 	var halfNumber = number/2;
+	var n = number;
 	
-	while(number >= 1) {
+	while(n >= 1) {
 		
-		result = result * number--;
+		result = result * n--;
 
-	if(number <= halfNumber) return result;
+		if(number > 10 && n <= halfNumber) return result;
 		
 	}
+	
+	
 	return result;
 }
 
-var x = numberFactorial(4);
+var x = numberFactorial(11);
 console.log(x);
 
-// HW numberFactorial with while; multiply only down to the half of the number if number is more than 10;
+// HW There are numbers a and b in the function. Count a number of numbers from 1 to a which don't have a division remainder;
