@@ -1,21 +1,17 @@
-function numberFactorial (number) {
-	var result = 1;
-	var halfNumber = number/2;
-	var n = number;
+function numberOfNumbers (a, b) {
+	var counter = 1;
+	var number;
 	
-	while(n >= 1) {
-		
-		result = result * n--;
-
-		if(number > 10 && n <= halfNumber) return result;
-		
+	while(a > 1) {
+		number = a % b;
+		if(number == 0) counter = counter + number;
+		a--;	
 	}
-	
-	
-	return result;
+		
+	return counter;
 }
 
-var x = numberFactorial(11);
+var x = numberOfNumbers(11, 3);
 console.log(x);
 
 // HW There are numbers a and b in the function. Count a number of numbers from 1 to a which don't have a division remainder;
