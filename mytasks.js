@@ -1,17 +1,17 @@
 function numberOfNumbers (a, b) {
 	var counter = 0;
-	var c = a % b;
 	
-	while(a <= b)	{
-
-		if(c == 0) counter = counter + c;
-		a++;
+	while(a > 1)	{
+		
+		if(a % b == 0) counter++;
+		a--;
+		
 	}
 
 	return counter;
 }
 
-var x = numberOfNumbers(1, 10);
+var x = numberOfNumbers(10, 2);
 
 console.log(x);
 
