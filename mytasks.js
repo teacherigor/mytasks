@@ -1,12 +1,12 @@
 function numberOfNumbers (a, b) {
-	var counter = 1;
-	var number;
+	var counter = 0;
 	
 	while(a > 1) {
-		number = a % b;
-		if(number == 0) counter = counter + number;
+		if(a % b == 0) counter++;
 		a--;	
 	}
+	
+	console.log('Your numbers are - ' + a + ' and ' + b);
 		
 	return counter;
 }
