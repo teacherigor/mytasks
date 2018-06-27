@@ -1,18 +1,16 @@
-function numberOfNumbers (a, b) {
+function numberOfNumbers(a, b) {
 	var counter = 0;
+	var initial_a = a;
 	
-	while(a > 1)	{
-		
+	while(a > 1) {
 		if(a % b == 0) counter++;
 		a--;
-		
 	}
-
+	
+	console.log('My numbers are ' + initial_a + ' and ' + b);
+	
 	return counter;
 }
 
-var x = numberOfNumbers(10, 2);
-
+var x = numberOfNumbers(15, 2);
 console.log(x);
-
-// HW There are numbers a and b in the function. Count a number of numbers from 1 to a which don't have a division remainder;
