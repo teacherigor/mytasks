@@ -1,18 +1,20 @@
-function numberOfNumbers(a, b) {
+function mathematics (n) {
 	var counter = 0;
-	var initialA = a;
+	var sum;
 	
-	while(a > 1) {
-		if(a % b == 0) counter++;
-		a--;
+	while(counter < n) {
+		sum = counter + 1;
+		counter++;
 	}
 	
-	console.log('My numbers are ' + initialA + ' and ' + b);
-	
-	return counter;
+	console.log('Your number is 5.');
+	console.log("I've calculated from 1 to 5.");
+	console.log('Sum is ' + sum);
+	console.log('Division is ');
+	console.log('Multiplication is ');
+	console.log('Subraction is ');
+
 }
 
-var x = numberOfNumbers(15, 2);
+var x = mathematics(5);
 console.log(x);
-
-//
