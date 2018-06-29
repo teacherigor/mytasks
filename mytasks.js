@@ -1,12 +1,9 @@
 function mathematics (n) {
-	var counter = 1;
-	var addition;
-	var sum;
+	var sum = 0;
 	
-	while(counter < n) {
-		addition = counter + 1;
-		sum = counter + addition;
-		counter++;
+	while(n != 0) {
+		sum = sum + n;
+		n--;
 	}
 	
 	console.log('Your number is 5.');
