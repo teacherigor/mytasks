@@ -1,9 +1,11 @@
 function mathematics (n) {
-	var counter = 0;
+	var counter = 1;
+	var addition;
 	var sum;
 	
 	while(counter < n) {
-		sum = counter + 1;
+		addition = counter + 1;
+		sum = counter + addition;
 		counter++;
 	}
 	
@@ -12,7 +14,7 @@ function mathematics (n) {
 	console.log('Sum is ' + sum);
 	console.log('Division is ');
 	console.log('Multiplication is ');
-	console.log('Subraction is ');
+	console.log('Subtraction is ');
 
 }
 
