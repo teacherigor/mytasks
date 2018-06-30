@@ -14,8 +14,7 @@ function mathematics (n) {
 
 	}
 	
-	console.log('Your number is ' + n);
-	console.log("I've calculated from 1 to 5.");
+	console.log("I've calculated from 1 to " + n);
 	console.log('Sum is ' + sum);
 	console.log('Division is ' + division);
 	console.log('Multiplication is ' + multiplication);
@@ -23,5 +22,4 @@ function mathematics (n) {
 
 }
 
-var x = mathematics(5);
-console.log(x);
+mathematics(7);
