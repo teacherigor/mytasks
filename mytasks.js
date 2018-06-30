@@ -1,17 +1,25 @@
 function mathematics (n) {
+	var counter = 1;
 	var sum = 0;
+	var division = 1;
+	var multiplication = 1;
+	var subtraction = 1;
 	
-	while(n != 0) {
-		sum = sum + n;
-		n--;
+	while(counter <= n) {
+		sum = sum + counter;
+		division = division / counter;
+		multiplication = multiplication * counter;
+		subtraction = subtraction - counter;
+		counter++;
+
 	}
 	
-	console.log('Your number is 5.');
+	console.log('Your number is ' + n);
 	console.log("I've calculated from 1 to 5.");
 	console.log('Sum is ' + sum);
-	console.log('Division is ');
-	console.log('Multiplication is ');
-	console.log('Subtraction is ');
+	console.log('Division is ' + division);
+	console.log('Multiplication is ' + multiplication);
+	console.log('Subtraction is ' + subtraction);
 
 }
 
